@@ -2,7 +2,9 @@ import './App.css';
 import './css/mediaquery.css'
 
 // Routes
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import Routes hereimport Home from './pages/Home';
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import Routes hereimport Home from './pages/Home';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'; // Import Routes hereimport Home from './pages/Home';
+
 import JobDetails from './pages/JobDetails';
 import Events from './pages/Events';
 import Home from './pages/Home';
