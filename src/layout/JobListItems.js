@@ -48,6 +48,15 @@ const JobListItems = () => {
           <div className="box-item-top-nav d-corner">
             <h3 className="box-item-sub-head d-center">
               {/* SVG Icon Here */}
+              <svg style={{ marginRight:"15px" }}
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    width="24"
+    height="24"
+    fill="#1DA1F2">
+    <path d="M23.953 4.57c-.885.392-1.83.656-2.825.775 1.014-.609 1.794-1.57 2.165-2.723-.95.56-2.003.977-3.127 1.195-.895-.955-2.167-1.55-3.595-1.55-2.72 0-4.927 2.207-4.927 4.927 0 .387.044.765.127 1.126-4.092-.205-7.72-2.164-10.148-5.144-.426.731-.666 1.577-.666 2.476 0 1.71.869 3.213 2.188 4.096-.806-.025-1.564-.247-2.229-.616v.062c0 2.392 1.698 4.39 3.946 4.843-.414.112-.848.171-1.296.171-.316 0-.624-.031-.928-.086.629 1.963 2.445 3.391 4.6 3.429-1.684 1.319-3.808 2.107-6.096 2.107-.396 0-.787-.023-1.176-.067 2.176 1.393 4.768 2.207 7.548 2.207 9.056 0 14.002-7.498 14.002-13.986 0-.213 0-.426-.015-.639.961-.693 1.8-1.56 2.463-2.548z"/>
+</svg>
+
               {job.title}
             </h3>
             <div className="actions-cont">
@@ -91,7 +100,7 @@ const JobListItems = () => {
           {/* Job description */}
           <div className="job-description-cont">
             <h3>Job Description</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
           <div className="short-notes-cont">
             <h3>No of Candidate: 90</h3>

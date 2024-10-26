@@ -20,9 +20,16 @@ function EventTable({searchTerm}) {
     fetchData();
   }, []);
 
-  const filteredCandidates = candidates.filter(candidate =>
-    candidate.name.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  const filteredCandidates = candidates.filter(candidate => {
+    return (
+        candidate.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        candidate.candidateId.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        (candidate.rank && candidate.rank.toString().includes(searchTerm)) ||
+        (candidate.mark && candidate.mark.toString().includes(searchTerm)) ||
+        (candidate.date && candidate.date.includes(searchTerm))  // Assuming date is a string like 'YYYY-MM-DD'
+    );
+});
+
 
   const indexOfLastCandidate = currentPage * itemsPerPage;
   const indexOfFirstCandidate = indexOfLastCandidate - itemsPerPage;

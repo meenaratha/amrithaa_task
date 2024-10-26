@@ -1,10 +1,10 @@
 import React from 'react'
 import goldCoin from '../images/gold-coin.png'; 
 import profilePic from '../images/profile_pic.jpeg'
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 function Header({ toggleSidebar, isSidebarOpen }) {
-
+  const location = useLocation();
   return (
     <>
       <header className="header-wrapper ">
@@ -12,7 +12,7 @@ function Header({ toggleSidebar, isSidebarOpen }) {
             <span className="material-icons-outlined">{isSidebarOpen ? 'close' : 'menu'}</span>
             </div>
             <div className="top-header-cont container-bg">
-              <ul className="top-menu-list">
+              {/* <ul className="top-menu-list">
                 <li className="top-menu ">
                   <Link className="menu-link menu-active" to="/">
                     Home
@@ -38,7 +38,49 @@ function Header({ toggleSidebar, isSidebarOpen }) {
                     contact us
                   </Link>
                 </li>
-              </ul>
+              </ul> */}
+              <ul className="top-menu-list">
+            <li className="top-menu">
+                <Link
+                    className={`menu-link ${location.pathname === "/" ? "menu-active" : ""}`}
+                    to="/"
+                >
+                    Home
+                </Link>
+            </li>
+            <li className="top-menu">
+                <Link
+                    className={`menu-link ${location.pathname === "/jobdetails" ? "menu-active" : ""}`}
+                    to="/jobdetails"
+                >
+                    Job Post
+                </Link>
+            </li>
+            <li className="top-menu">
+                <Link
+                    className={`menu-link ${location.pathname === "/events" ? "menu-active" : ""}`}
+                    to="/events"
+                >
+                    Events
+                </Link>
+            </li>
+            <li className="top-menu">
+                <Link
+                    className={`menu-link ${location.pathname === "/tools" ? "menu-active" : ""}`}
+                    to="/tools"
+                >
+                    Tools
+                </Link>
+            </li>
+            <li className="top-menu">
+                <Link
+                    className={`menu-link ${location.pathname === "/contact" ? "menu-active" : ""}`}
+                    to="/contact"
+                >
+                    Contact Us
+                </Link>
+            </li>
+        </ul>
             </div>
             <div className="coin-cont container-bg">
               <img src={goldCoin} alt="" />
