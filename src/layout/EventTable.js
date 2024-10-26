@@ -9,7 +9,7 @@ function EventTable({searchTerm}) {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/candidates.json');
+        const response = await fetch('https://meenaratha.github.io/amrithaa_task/candidates.json');
         const data = await response.json();
         setCandidates(data);
       } catch (error) {
