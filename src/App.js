@@ -1,23 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import './css/mediaquery.css'
+
+// Routes
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Import Routes hereimport Home from './pages/Home';
+import JobDetails from './pages/JobDetails';
+import Events from './pages/Events';
+import Home from './pages/Home';
 
 function App() {
+
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       <Router>            
+       <Routes> {/* Wrap your routes in the Routes component */}
+          <Route path="/" element={<Home />} /> {/* Use element prop for functional components */}
+          <Route path="/jobdetails" element={<JobDetails />} />
+          <Route path="/events" element={<Events />} />
+        </Routes>
+        </Router>
+
+       
     </div>
   );
 }

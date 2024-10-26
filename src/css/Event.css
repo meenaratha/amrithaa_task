@@ -1,0 +1,198 @@
+.icon-bg{
+    width: 45px;
+    height: 45px;
+    background: var(--black);
+    border-radius: 4px;
+}
+.icon-bg span{
+    color: #ffff;
+    font-size: 40px;
+}
+.eventtable-section {
+    overflow: auto;
+    width: 100%;
+    /* max-width: 940px; */
+    max-height: 600px;
+    padding-bottom: 20px;
+    
+    
+}
+
+.event-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.event-table thead {
+    position: sticky;
+    top: 0;
+    z-index: 1; /* Ensure header stays above other content */
+    background-color: #fff;
+}
+.event-table th {
+   
+    padding: 20px;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 14px;
+    color: #0C397E;
+    font-weight: 600;
+}
+.event-table tr{
+    border-bottom: 2px solid #f2f2f2;
+}
+.event-table tbody tr:nth-last-child(1) {
+    border-bottom: none; /* Hides the border directly */
+}
+.event-table tbody td{
+    padding: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.event-table tbody td p{
+    font-size: 16px;
+    font-weight: 600;
+}
+.checkbox {
+    transform: scale(1.8); /* Adjust to your desired size */
+    margin-right: 20px; /* Add spacing if needed */
+}
+/* Custom scrollbar styles */
+.eventtable-section::-webkit-scrollbar {
+    width: 6px; /* Width of the scrollbar */
+    height: 6px;
+    opacity: 0; /* Hide scrollbar by default */
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+.eventtable-section:hover{
+    cursor: grab;
+}
+/* Show scrollbar on hover */
+.eventtable-section:hover::-webkit-scrollbar {
+    opacity: 1; /* Show scrollbar on hover */
+}
+.eventtable-section::-webkit-scrollbar-track {
+    background: #f2f2f2; /* Background of the scrollbar track */
+    border-radius: 20px;
+    width: 3px; 
+}
+
+.eventtable-section::-webkit-scrollbar-thumb {
+    background-color: gray; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the thumb */
+    width: 6px; /* Width of the scrollbar */
+    height: 6px;
+}
+
+
+
+.fav-btn{
+    border: 2px solid #000000;
+    padding: 10px 15px;
+    background: transparent;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 15px;
+    text-wrap: nowrap;
+}
+.table-names{
+    display: flex;
+    align-items: center;
+    text-wrap: nowrap;
+}
+.event-status{
+    color: #266807;
+}
+.pdf-btn-cont{
+    display: flex;
+    align-items: center;
+}
+.pdf-btn{
+    color: #8C15AD;
+    border: 2px solid #8C15AD;
+    border-radius: 20px;
+    padding: 7px 10px;
+    text-wrap: nowrap;
+    background: transparent;
+    margin-right: 15px;
+    font-weight: 600;
+    font-size: 12px;
+    
+    /* border-image: linear-gradient(90deg, #8C15AD, #123880) 1;  */
+   
+    background-color: transparent; /* Background color */
+
+    cursor: pointer; /* Change cursor on hover */
+    white-space: nowrap; /* Prevent text wrapping */
+    transition: background-color 0.3s ease;
+}
+.pdf-btn span{
+    margin-right: 10px;
+}
+.mark-btn{
+    color: #0C397E;
+    border: 2px solid #0c397e;
+    border-radius: 20px;
+    padding: 10px 15px;
+    text-wrap: nowrap;
+    background: transparent;
+    font-weight: 600;
+}
+.d-inline{
+    display: flex;
+    align-items: center;
+}
+.d-inline p{
+    margin-left: 20px;
+}
+.d-squre-icon{
+    background: #0C397E;
+    border-radius: 4px;
+    width: 30px;
+    height: 30px;
+    color: #ffff;
+    margin-left: 35px;
+}
+.d-squre-icon span{
+    font-size: 18px;
+}
+.event-pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+}
+.event-pagination button{
+    background-color: #0c397e;
+    width: 25px;
+    min-width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffff;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    border-radius: 50%;
+    margin-right: 4px;
+}
+.pagination-btns{
+    background-color: #0c397e;
+    width: 25px;
+    min-width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffff;
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    border-radius: 50%;
+    margin-right: 4px;
+
+}
+.pagination-dots{
+   color: #0C397E;
+   font-size: 27px;
+}

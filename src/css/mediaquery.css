@@ -1,0 +1,128 @@
+@media screen and (max-width:957px) {
+    .coin-cont{
+        padding: 10px;
+    }
+    .top-menu {
+        margin-right: 10px;
+    }
+    .top-header-cont {
+        padding: 15px 10px;
+    }
+    .header-wrapper {
+        gap: 10;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .header-wrapper{
+           display: none;
+    }
+    .right-content {
+        padding-top: 0px;
+    }
+    .page-content {
+        margin-top: 10px;
+    }
+    .page-head-cont {
+        flex-direction: column;
+    }
+    .page-title{
+        margin-bottom: 15px;
+    }
+    .sidebar-menuicon-cont {
+        width: 40px;
+        min-width: 40px;
+        height: 40px;
+        background: var(--blue);
+        color: #fff;
+    }
+    .notiification-cont{
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+        background: #f2f2f2;
+        color: #171717;
+    }
+    .profile-pic-cont {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+        background: var(--blue);
+        color: #fff;
+    }
+    .profile-pic-cont img{
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+
+    } 
+    .coin-cont{
+        background: #FFE1CC;
+        padding: 10px;
+    }
+}
+@media screen and (max-width:568px) {
+    .search-box-cont {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .create-post-btn {
+        margin-top: 0px;
+    }
+    .right-content {
+        padding: 0px;
+    }
+    .top-mobile-menu-box{
+        justify-content: start;
+    }
+}
+
+
+.mobile-header-cont{
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 5px 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.top-mobile-menu-box{
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    justify-content: center;
+}
+.top-mobile-menu{
+    padding: 10px 10px;
+}
+.top-mobile-menu-link{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;  
+    color: rgb(5, 5, 5);
+}
+.pink{
+    background-color: #FFE1CC;
+}
+.lg-blue{
+    background: var(--lg-inkblue);
+}
+.sky{
+    background: #DFF3FE;
+}
+.lg-green{
+    background: #FBE2F4;
+}
+.lg-navi{
+    background: #ECEFF4;
+}
+@media screen and (min-width:769px) {
+    .mobile-header-cont{
+     display: none;
+    }
+    .top-mobile-menu-box{
+        display: none;
+    }
+ }
