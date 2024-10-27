@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/amrithaa_task/static/css/main.755bda98.css",
+    "main.css": "/amrithaa_task/static/css/main.a4711365.css",
     "main.js": "/amrithaa_task/static/js/main.2e0a8f0a.js",
     "static/js/453.dfcd5fdb.chunk.js": "/amrithaa_task/static/js/453.dfcd5fdb.chunk.js",
     "static/media/profile_pic.jpeg": "/amrithaa_task/static/media/profile_pic.df9f7d5e11d491614744.jpeg",
     "static/media/logo.png": "/amrithaa_task/static/media/logo.72ff212b724d6a0eeb21.png",
     "static/media/gold-coin.png": "/amrithaa_task/static/media/gold-coin.065f5acd8af4db75da60.png",
     "index.html": "/amrithaa_task/index.html",
-    "main.755bda98.css.map": "/amrithaa_task/static/css/main.755bda98.css.map",
+    "main.a4711365.css.map": "/amrithaa_task/static/css/main.a4711365.css.map",
     "main.2e0a8f0a.js.map": "/amrithaa_task/static/js/main.2e0a8f0a.js.map",
     "453.dfcd5fdb.chunk.js.map": "/amrithaa_task/static/js/453.dfcd5fdb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.755bda98.css",
+    "static/css/main.a4711365.css",
     "static/js/main.2e0a8f0a.js"
   ]
 }
