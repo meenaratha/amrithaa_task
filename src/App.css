@@ -155,6 +155,7 @@ opacity: 0; /* Initially hidden */
   min-width: 260px;
   width: 100%;
   max-height: fit-content;
+  min-height: fit-content;
 border-top-right-radius: 25px;
 border-bottom-right-radius: 25px;
 padding: 20px ;
